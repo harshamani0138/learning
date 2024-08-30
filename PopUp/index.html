@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <title>popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button type="submit" class="btn" onclick="openpopup()">submit</button>
+        <div class="popup" id="popup">
+            <img src="TICKK.PNG">
+            <h2>thank yOu!</h2>
+            <p> lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+            <button type="button" onclick="closepopup()">ok</button>
+        </div>
+    </div>
+    <script>
+        let popup = doucment.getElementByID("popup");
+        function openpopup() {
+            popup.classList.add("open-popup");
+        }
+        function closepopup() {
+            popup.classList.remove("open-popup");
+        }
+
+    </script>
+</body>
+
+</html>

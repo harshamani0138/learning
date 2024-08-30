@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "uruntu", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}
+
+.skills {
+    width: 100%;
+    max-width: 670px;
+    padding: 0 20px;
+}
+
+.skill-name { /* Fixed class name */
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 28px 0; /* Adjusted to margin-top and margin-bottom for better spacing */
+}
+
+.skill-bar { /* Fixed class name */
+    height: 15px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per { /* Fixed class name */
+    height: 14px;
+    background: #d13638;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before { /* Fixed class name */
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%); /* Changed to horizontal translation */
+}
+
+.skill-per::after { /* Fixed class name */
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg); /* Consistent horizontal translation */
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
