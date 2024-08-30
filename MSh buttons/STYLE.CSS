@@ -1,0 +1,55 @@
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+
+}
+
+
+
+.my-button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: lato;
+    background-color: #b22222;
+    color: #fff;
+    border: 1px solid goldenrod;
+
+}
+
+.my-button-2{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: lato;
+    background-color: #f66767;
+    color: #fff;
+    border: 1px solid goldenrod;
+}
+
+.my-button-3{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: lato;
+    background-color: #43ab92;
+    color: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 80px;
+}
+
+a{
+    display: block;
+    width: 200px;
+    height: 25px;
+    background-color: #43ab92;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: lato;
+    color: #fff;
+    box-shadow: 2px 2px lightgrey;
+    text-align: center;
+    
+}
+

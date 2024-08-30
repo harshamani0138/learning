@@ -1,0 +1,4 @@
+<p id="demo"></p>
+<script>
+    doucment.getElementByID("demo").innerHTML="browser inner window width:"+window.innerWidth+"px"+"browser inner window height:"+window.innerHeight+"px";
+</script>

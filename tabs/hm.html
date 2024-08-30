@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>srimle tab</title>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+                height: auto;
+                margin: 0;
+                padding: 0;
+
+            }
+            body{
+                min-height: 100vh;
+                min-width: 100%;
+                background-color: #eee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            }
+            .container{
+                width: 65%;
+                color: #eee;
+                background-color: darkcyan;
+                box-shadow: 0px 4px 20px 1px rgb(0,60,60,0.5);
+
+            }
+            .tab_header ul{
+                list-style-type: none;
+                border-bottom: 1pxsolid #fff;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            .tab_header ul li{
+                float: left;
+                padding: 15px 20 px;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            .tab_content.panel{
+                position: relative;
+                min-height: 300px;
+                padding: 40px;
+                font: 20px;
+            }
+            .tab_header.panel h2{
+                padding: 20px;
+            }
+            .tab_content.panel h3{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                color: #ccc;
+            }
+            .tab_header .tab_btn:hover{
+                background-color: teal;
+            }
+            .tab_content .active{
+                display: block;
+            }
+
+
+
+            
+        </style>
+    </head>
+    <body>
+         <div class="container">
+            <nav class="tab_header">
+            <ul>
+                <li class="tab-btn active"onclick="myfunction(this,'panel_1')">Home</li>
+                <li class="tab-btn"onclick="myfunction(this,'panel_2)">About</li>
+                <li class="tab-btn"onclick="myfunction(this,'panel_3)">Services</li>
+                <li class="tab-btn"onclick="myfunction(this,'panel_4)">Contact</li>
+            </ul>
+        </nav> 
+        <main class="tab_content">
+            <div id="panel_1" class="panel">
+             <h2>Home</h2>   
+             <p> lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmo
+             </p>
+             <h3>panel 01</h3>
+            </div>
+            <div id="panel_2" class="panel">
+                <h2>About</h2>   
+                <p> lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmo
+                </p>
+                <h3>panel 02</h3>
+               </div>
+               <div id="panel_3" class="panel">
+                <h2>Services</h2>   
+                <p> lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmo
+                </p>
+                <h3>panel 03</h3>
+               </div>
+               <div id="panel_4" class="panel">
+                <h2>Contact</h2>   
+                <p> lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmo
+                </p>
+                <h3>panel 04</h3>
+               </div>
+
+        </main>
+        </div>
+        <script type="text/javascript">
+            function myFunction(activetab, activepanal){
+                let alltabs = document.getElementByClassName("tab_btn");
+                let allpanels = doucment.getElementByClassName("panel");
+                let i=0;
+                while(i < allTabs.length){
+                    allTabs[i].classList.remove('active');
+                    allpanels[i].classList.remove('active');
+                    i++;
+
+                }
+                activeTab.classList.add('active');
+                var activePanel =document.getElementById(activepanel).classList.add('active');
+            }
+        </script>
+
+        
+    </body>
+</html>
